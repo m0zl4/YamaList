@@ -13,6 +13,12 @@
 		D6ACF166261FF80700E4008C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6ACF165261FF80700E4008C /* Assets.xcassets */; };
 		D6ACF169261FF80700E4008C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6ACF168261FF80700E4008C /* Preview Assets.xcassets */; };
 		D6ACF16C261FF80700E4008C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6ACF16A261FF80700E4008C /* LaunchScreen.storyboard */; };
+		D6ACF178261FF8E900E4008C /* YamaList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ACF177261FF8E900E4008C /* YamaList.swift */; };
+		D6ACF17B261FF90000E4008C /* YamaDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ACF17A261FF90000E4008C /* YamaDetail.swift */; };
+		D6ACF17E261FF90F00E4008C /* YamaRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ACF17D261FF90F00E4008C /* YamaRow.swift */; };
+		D6ACF189261FFA6600E4008C /* Yama.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ACF188261FFA6600E4008C /* Yama.swift */; };
+		D6ACF18C261FFA7200E4008C /* DummySugoi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ACF18B261FFA7200E4008C /* DummySugoi.swift */; };
+		D6ACF1952620087900E4008C /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ACF1942620087900E4008C /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		D6ACF168261FF80700E4008C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D6ACF16B261FF80700E4008C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6ACF16D261FF80700E4008C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6ACF177261FF8E900E4008C /* YamaList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YamaList.swift; sourceTree = "<group>"; };
+		D6ACF17A261FF90000E4008C /* YamaDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YamaDetail.swift; sourceTree = "<group>"; };
+		D6ACF17D261FF90F00E4008C /* YamaRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YamaRow.swift; sourceTree = "<group>"; };
+		D6ACF188261FFA6600E4008C /* Yama.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yama.swift; sourceTree = "<group>"; };
+		D6ACF18B261FFA7200E4008C /* DummySugoi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummySugoi.swift; sourceTree = "<group>"; };
+		D6ACF1942620087900E4008C /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +68,9 @@
 		D6ACF15E261FF80300E4008C /* YamaNoList */ = {
 			isa = PBXGroup;
 			children = (
-				D6ACF15F261FF80300E4008C /* AppDelegate.swift */,
-				D6ACF161261FF80300E4008C /* SceneDelegate.swift */,
-				D6ACF163261FF80300E4008C /* ContentView.swift */,
+				D6ACF175261FF85500E4008C /* Model */,
+				D6ACF176261FF89700E4008C /* Base */,
+				D6ACF174261FF84F00E4008C /* View */,
 				D6ACF165261FF80700E4008C /* Assets.xcassets */,
 				D6ACF16A261FF80700E4008C /* LaunchScreen.storyboard */,
 				D6ACF16D261FF80700E4008C /* Info.plist */,
@@ -73,6 +85,36 @@
 				D6ACF168261FF80700E4008C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D6ACF174261FF84F00E4008C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6ACF163261FF80300E4008C /* ContentView.swift */,
+				D6ACF177261FF8E900E4008C /* YamaList.swift */,
+				D6ACF17A261FF90000E4008C /* YamaDetail.swift */,
+				D6ACF17D261FF90F00E4008C /* YamaRow.swift */,
+				D6ACF1942620087900E4008C /* Profile.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6ACF175261FF85500E4008C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6ACF188261FFA6600E4008C /* Yama.swift */,
+				D6ACF18B261FFA7200E4008C /* DummySugoi.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D6ACF176261FF89700E4008C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D6ACF15F261FF80300E4008C /* AppDelegate.swift */,
+				D6ACF161261FF80300E4008C /* SceneDelegate.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6ACF17E261FF90F00E4008C /* YamaRow.swift in Sources */,
 				D6ACF160261FF80300E4008C /* AppDelegate.swift in Sources */,
+				D6ACF178261FF8E900E4008C /* YamaList.swift in Sources */,
 				D6ACF162261FF80300E4008C /* SceneDelegate.swift in Sources */,
+				D6ACF189261FFA6600E4008C /* Yama.swift in Sources */,
+				D6ACF17B261FF90000E4008C /* YamaDetail.swift in Sources */,
+				D6ACF18C261FFA7200E4008C /* DummySugoi.swift in Sources */,
+				D6ACF1952620087900E4008C /* Profile.swift in Sources */,
 				D6ACF164261FF80300E4008C /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
