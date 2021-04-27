@@ -28,7 +28,7 @@ struct YamaList: View {
             }
           }.padding(14)
         }
-      }.navigationBarTitle(Text("Daftar Gunung"))
+      }.navigationBarTitle(Text("Daftar Gunung -Mz"))
       
     }
   }
